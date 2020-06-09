@@ -29,40 +29,36 @@ else {
 // Navigate information 
 
 const chooseInfo = document.getElementById('more-infos');
+const choose = document.getElementsByClassName('choose');
+
 const infoContent = document.getElementById('info-content');
-
-const firstTarget = document.getElementById('firstTarget');
-const secondTarget = document.getElementById('secondTarget');
-const thirdTarget = document.getElementById('thirdTarget');
-
-const firstchild = document.getElementById('firstchild');
-const secondchild = document.getElementById('secondchild');
-const thirdchild = document.getElementById('thirdchild');
-
-
+const paragraph = document.getElementsByClassName('paragraph');
 
 
 chooseInfo.addEventListener('click',function changeInfoContent (event) {
 
 
     
-   if (event.target === firstTarget) {
-    firstchild.style.display = 'block';
-    secondchild.style.display = 'none';
-    thirdchild.style.display = 'none';
+   if (event.target === choose[0]) {
+    paragraph[0].style.display = 'block';
+    paragraph[1].style.display = 'none';
+    paragraph[2].style.display = 'none';
+
+    
+
     }
     
-       else if (event.target === secondTarget) {
-        firstchild.style.display = 'none';
-        secondchild.style.display = 'block';
-        thirdchild.style.display = 'none';
+       else if (event.target === choose[1]) {
+        paragraph[0].style.display = 'none';
+        paragraph[1].style.display = 'block';
+        paragraph[2].style.display = 'none';
     
        }
     
     else {
-        firstchild.style.display = 'none';
-        secondchild.style.display = 'none';
-        thirdchild.style.display = 'block';
+        paragraph[0].style.display = 'none';
+        paragraph[1].style.display = 'none';
+        paragraph[2].style.display = 'block';
     }
     
 
