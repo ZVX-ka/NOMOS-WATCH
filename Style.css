@@ -51,7 +51,7 @@ body {
     justify-content: space-between;
 }
 
-.infos .more-infos {
+.infos #more-infos {
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -74,13 +74,15 @@ h3:nth-child(2) {
     text-decoration: line-through; 
 }
 
-.more-infos h5:nth-child(1) {
+#more-infos h5:nth-child(1) {
     color: black;
 }
 
-.info-content {
+#info-content {
     font-size: 12px;
+    height: 100px;
 }
+
 
 .buttons {
     height: 40px;
