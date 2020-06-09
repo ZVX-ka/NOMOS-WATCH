@@ -6,17 +6,16 @@
     <title>Nomos Watch</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="card">
             <div class="images">
-                <div class="slider"><img src="images/Nomos1.webp" alt=""></div>
-                <div class="img-slider">
-                    <div class="imgs"><img src="images/Nomos1.webp" alt=""></div>
-                    <div class="imgs"><img src="images/Nomos2.webp" alt=""></div>
-                    <div class="imgs"><img src="images/Nomos3.webp" alt=""></div>
+                <div class="slider"><img id="big-image" src="images/Nomos1.webp" alt=""></div>
+                <div id="img-slider" class="img-slider">
+                    <div class="imgs"><img id="Nomos1" src="images/Nomos1.webp" alt=""></div>
+                    <div class="imgs"><img id="Nomos2" src="images/Nomos2.webp" alt=""></div>
+                    <div class="imgs"><img id="Nomos3" src="images/Nomos3.webp" alt=""></div>
                 </div>
             </div>
             <div class="infos">
@@ -47,10 +46,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    console.log('the DOM is ready to be interacted with!');
-});
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
