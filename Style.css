@@ -45,6 +45,10 @@ body {
     width: 50%;
 }
 
+.imgs {
+    cursor: pointer;
+}
+
 .infos .price {
     display: flex;
     width: 40%;
@@ -74,6 +78,10 @@ h3:nth-child(2) {
     text-decoration: line-through; 
 }
 
+.choose {
+    cursor: pointer;
+}
+
 #more-infos h5:nth-child(1) {
     color: black;
 }
@@ -82,7 +90,6 @@ h3:nth-child(2) {
     font-size: 12px;
     height: 100px;
 }
-
 
 .buttons {
     height: 40px;

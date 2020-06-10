@@ -37,30 +37,41 @@ const paragraph = document.getElementsByClassName('paragraph');
 
 chooseInfo.addEventListener('click',function changeInfoContent (event) {
 
+    for (i = 0 ; i <= paragraph.length ; i++) { 
+        /*
+        if (event.target === choose[1]) {          
+           
+            paragraph.style.
+            paragraph[i].style.display = 'block';
+           
+            }  
 
-    
-   if (event.target === choose[0]) {
-    paragraph[0].style.display = 'block';
-    paragraph[1].style.display = 'none';
-    paragraph[2].style.display = 'none';
-
-    
-
-    }
-    
-       else if (event.target === choose[1]) {
-        paragraph[0].style.display = 'none';
-        paragraph[1].style.display = 'block';
+         */
+        
+       if (event.target === choose[0]) {          
+        
+        paragraph[0].style.display = 'block';
         paragraph[2].style.display = 'none';
-    
-       }
-    
-    else {
+        paragraph[1].style.display = 'none';
+
+        }  
+
+       else if (event.target === choose[1]) {          
+        
+        paragraph[1].style.display = 'block';
+        paragraph[0].style.display = 'none';
+        paragraph[2].style.display = 'none';
+
+        }  
+
+       else   {
+        
+        paragraph[2].style.display = 'block';
         paragraph[0].style.display = 'none';
         paragraph[1].style.display = 'none';
-        paragraph[2].style.display = 'block';
-    }
-    
 
+        }  
+    }  
 });
 
+        
