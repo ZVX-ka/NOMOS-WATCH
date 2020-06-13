@@ -82,9 +82,7 @@ h3:nth-child(2) {
     cursor: pointer;
 }
 
-#more-infos h5:nth-child(1) {
-    color: black;
-}
+
 
 #info-content {
     font-size: 12px;
@@ -103,6 +101,8 @@ h3:nth-child(2) {
     border: 2px solid #5FDFFC;
     border-radius: 25px;
     background-color: white;
+    outline: none;
+    cursor: pointer;
 }
 
 .buttons button:nth-child(1) i {
