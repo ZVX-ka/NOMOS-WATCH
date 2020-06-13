@@ -44,9 +44,9 @@ chooseInfo.addEventListener('click',function changeInfoContent (event) {
 
        if (event.target === choose[0]) {          
         
-        choose[0].style.color = 'black';
-        choose[2].style.color = 'gray';
-        choose[1].style.color = 'gray';
+        choose[0].style.cssText = 'color:black ; border-bottom: 2px solid black ; padding-bottom: 6px';
+        choose[2].style.cssText = 'color:gray ; border-bottom: none';
+        choose[1].style.cssText = 'color:gray ; border-bottom: none';
 
         paragraph[0].style.display = 'block';
         paragraph[2].style.display = 'none';
@@ -56,9 +56,9 @@ chooseInfo.addEventListener('click',function changeInfoContent (event) {
 
        else if (event.target === choose[1]) {   
            
-        choose[1].style.color = 'black';
-        choose[2].style.color = 'gray';
-        choose[0].style.color = 'gray';
+        choose[1].style.cssText = 'color:black ; border-bottom: 2px solid black ; padding-bottom: 6px';
+        choose[0].style.cssText = 'color:gray ; border-bottom: none';
+        choose[2].style.cssText = 'color:gray ; border-bottom: none';
 
         paragraph[1].style.display = 'block';
         paragraph[0].style.display = 'none';
@@ -67,9 +67,10 @@ chooseInfo.addEventListener('click',function changeInfoContent (event) {
         }  
 
        else   {
-        choose[2].style.color = 'black';
-        choose[0].style.color = 'gray';
-        choose[1].style.color = 'gray';
+        choose[2].style.cssText = 'color:black ; border-bottom: 2px solid black ; padding-bottom: 6px';
+        choose[0].style.cssText = 'color:gray ; border-bottom: none';
+        choose[1].style.cssText = 'color:gray ; border-bottom: none';
+       
 
         paragraph[2].style.display = 'block';
         paragraph[0].style.display = 'none';
@@ -80,22 +81,3 @@ chooseInfo.addEventListener('click',function changeInfoContent (event) {
 });
 
         
-
-/*
-chooseInfo.addEventListener('click',function changeColor (event) {
-   
-    
-    for (i = 0 ; i <= paragraph.length ; i++) { 
-
-        if (event.target === choose[0]) {          
-  
-    choose[0].style.color = 'black';
-     
-    choose[i].style.color = 'red';
-        }
-
-}
-
-});
-
-*/

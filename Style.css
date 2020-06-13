@@ -62,9 +62,14 @@ body {
     color: gray;
 }
 
+#more-infos h5 {
+    padding: 8px;
+    
+}
 #more-infos h5:nth-child(1) {
 
     color: black;
+    
 }
 
 .infos {
