@@ -81,3 +81,14 @@ chooseInfo.addEventListener('click',function changeInfoContent (event) {
 });
 
         
+// add items to the cart
+
+const addToCart = document.getElementById('add-to-cart');
+const itemsAdded = document.getElementById('items-added');
+const counter = document.getElementById('counter');
+
+addToCart.addEventListener('click', function addItemToCart(ev){
+    
+    itemsAdded.textContent = (counter.value);
+
+});

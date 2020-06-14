@@ -9,7 +9,11 @@
 </head>
 <body>
     <div class="container">
+
         <div class="card">
+            <div id="shopping">
+                <i class="fas fa-cart-plus"><sup id="items-added"></sup></i>
+            </div>
             <div class="images">
                 <div class="slider"><img id="big-image" src="images/Nomos1.webp" alt=""></div>
                 <div id="img-slider" class="img-slider">
@@ -19,7 +23,7 @@
                 </div>
             </div>
             <div class="infos">
-                <h1>NOMOS LUX Glashütte watch</h1>
+                <h2>NOMOS LUX Glashütte</h2>
                 <div class="reviews">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -41,8 +45,12 @@
                     <p class="paragraph" style="display: none;">CALIBER DUW 2002 manual <br> MOVEMENT HEIGHT 3.6 mm <br> DIAMETER 32.6 by 22.6 mm <br> POWER RESERVE up to 84 hours <br> JEWELS 23</p>
                     <p class="paragraph" style="display: none;">Lorem Repellendus ullam odit placeat, non rem eaque. ipsum dolor sit amet consectetur adipisicing elit. Repellendus Repellendus ullam odit placeat, non rem eaque.ullam odit placeat, non rem eaque.</p>
                 </div>
+                <div class="quantity">
+                    <h3>QUANTITY</h3>
+                <input type="number" name="items" id="counter" min="1" value="1">
+            </div>
                 <div class="buttons">
-                    <button><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                    <button id="add-to-cart"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
                     <button>BUY NOW</button>
                 </div>
             </div>
