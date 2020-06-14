@@ -10,20 +10,17 @@ const imgSlider = document.getElementById('img-slider');
 
 imgSlider.addEventListener('click',function changeImage (event){
 
-if (event.target === Nomos1) {
-    BigImage.setAttribute ("src","images/Nomos1.webp");
-}
+    if (event.target === Nomos1) {
+         BigImage.setAttribute ("src","images/Nomos1.webp");
+    }
 
-   else if (event.target === Nomos2) {
+    else if (event.target === Nomos2) {
         BigImage.setAttribute ("src","images/Nomos2.webp");
-   }
+    }
 
-else {
+    else {
     BigImage.setAttribute ("src","images/Nomos3.webp");
-
-}
-
-
+    }
 });
 
 
@@ -87,7 +84,7 @@ const addToCart = document.getElementById('add-to-cart');
 const itemsAdded = document.getElementById('items-added');
 const counter = document.getElementById('counter');
 
-addToCart.addEventListener('click', function addItemToCart(ev){
+addToCart.addEventListener('click', function addItemToCart(ev) {
     
     itemsAdded.textContent = (counter.value);
 

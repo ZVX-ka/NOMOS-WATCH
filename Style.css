@@ -110,13 +110,15 @@ h3:nth-child(2) {
 }
 
 .quantity {
+    width: 45%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .quantity input {
     text-align: center;
+    width: 50px;
 }
 
 
