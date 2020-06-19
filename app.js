@@ -8,7 +8,7 @@ const Nomos3 = document.getElementById('Nomos3');
 
 const imgSlider = document.getElementById('img-slider');
 
-imgSlider.addEventListener('click',function changeImage (event){
+imgSlider.addEventListener('click', event => {
 
     if (event.target === Nomos1) {
          BigImage.setAttribute ("src","images/Nomos1.webp");
@@ -33,7 +33,7 @@ const choose = document.getElementsByClassName('choose');
 const infoContent = document.getElementById('info-content');
 const paragraph = document.getElementsByClassName('paragraph');
 
-chooseInfo.addEventListener('click',function changeInfoContent (event) {
+chooseInfo.addEventListener('click', event => {
    
     
     for (i = 0 ; i <= paragraph.length ; i++) { 
@@ -84,8 +84,4 @@ const addToCart = document.getElementById('add-to-cart');
 const itemsAdded = document.getElementById('items-added');
 const counter = document.getElementById('counter');
 
-addToCart.addEventListener('click', function addItemToCart(ev) {
-    
-    itemsAdded.textContent = (counter.value);
-
-});
+addToCart.addEventListener('click',(ev) => itemsAdded.textContent = (counter.value));
