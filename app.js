@@ -77,11 +77,10 @@ chooseInfo.addEventListener('click', event => {
     }  
 });
 
-        
 // add items to the cart
 
 const addToCart = document.getElementById('add-to-cart');
 const itemsAdded = document.getElementById('items-added');
 const counter = document.getElementById('counter');
 
-addToCart.addEventListener('click',(ev) => itemsAdded.textContent = (counter.value));
+addToCart.addEventListener('click',ev => itemsAdded.textContent = (counter.value));
