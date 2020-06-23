@@ -13,8 +13,11 @@ imgSlider.addEventListener('click', event => {
         BigImage.setAttribute ("src","images/Nomos2.webp");
     }
 
-    else {
+    else if {
     BigImage.setAttribute ("src","images/Nomos3.webp");
+    }
+    else {
+        
     }
 });
 
