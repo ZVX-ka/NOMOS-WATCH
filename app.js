@@ -16,9 +16,7 @@ imgSlider.addEventListener('click', event => {
     else if {
     BigImage.setAttribute ("src","images/Nomos3.webp");
     }
-    else {
-        
-    }
+  
 });
 
 
