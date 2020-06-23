@@ -84,9 +84,9 @@ body {
     
 }
 #more-infos h5:nth-child(1) {
-
-    color: black;
-    
+    color:black ; 
+    border-bottom: 2px solid black ; 
+    padding-bottom: 6px;
 }
 
 .infos {
