@@ -50,7 +50,7 @@ body {
 margin-bottom: 25px;
 }
 
-.infos h2 {
+.infos h1 {
     display: none;
 }
 .imgs {
@@ -186,4 +186,96 @@ h3:nth-child(2) {
 
 
 
+@media ( min-width : 1025px) {
 
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container {
+        background-color: rgb(132, 175, 255);
+        width: 75%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .card {
+        flex-direction: row;
+        height: 85%;
+        width: 80%;
+        border-radius: 15px;
+    }
+
+    .images {
+        width: 50%;
+        height: 100%;
+    }
+
+    .images h2 {
+      display: none;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0px;
+        height: 80%;
+        width: 50%;
+       font-size: 20px;
+        padding-right: 70px;
+        
+    }
+
+    .infos h1 {
+        display: block;
+    }
+
+    .buttons {
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .buttons button {
+        padding: 8px;
+    }
+
+    .img-slider {
+        width: 50%;
+    }
+
+    #shopping {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #shopping i {
+        font-size: 30px;
+    }
+
+    
+}
+
+
+@media (min-width : 670px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .buttons {
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    .card {
+        width: 75%;
+    }
+}
