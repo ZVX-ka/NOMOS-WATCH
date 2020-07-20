@@ -6,75 +6,71 @@
 html {
     margin: 0px;
     padding: 0px;
+    height: 800px;
+    width: 100vw;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
- 
 }
 
 .container {
-    height: 90vh;
-    width: 75vw;
-    background-color: #5FDFFC;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    padding: 20px;
 }
 
 
 .card {
     background-color: white;
-    width: 80%;
-    height: 70%;
     border-radius: 8px;
     display: flex;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     position: relative;
 }
 
 #shopping {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
    
 }
 
 
 #shopping i {
-    font-size: 25px;
+    font-size: 20px;
     
 }
 #shopping sup {
     margin-left: 4px;
 }
 
-.card .images,
-.card .infos {
-    width: 50%;
+.images h2 {
+margin-bottom: 25px;
 }
 
+.infos h2 {
+    display: none;
+}
 .imgs {
     cursor: pointer;
 }
 
 .infos .price {
     display: flex;
-    width: 40%;
-    justify-content: space-between;
+    justify-content: start;
 }
+.infos .price h3:last-child  {
+    margin-left: 20px; 
+}
+
 
 .infos #more-infos {
     display: flex;
-    width: 80%;
     justify-content: space-between;
     color: gray;
 }
@@ -93,7 +89,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    height: 400px;
+    margin-top: 30px;
+    width: 90%;
 }
 
 .reviews {
@@ -110,15 +108,16 @@ h3:nth-child(2) {
 }
 
 .quantity {
-    width: 45%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .quantity input {
     text-align: center;
-    width: 50px;
+    width: 40px;
 }
 
 
@@ -130,11 +129,15 @@ h3:nth-child(2) {
 .buttons {
     height: 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
 .buttons button {
-    width: 45%;
+    margin: 10px;
+    width: 180px;
+    padding: 5px;
     font: inherit;
     border: 2px solid #5FDFFC;
     border-radius: 25px;
@@ -167,11 +170,11 @@ h3:nth-child(2) {
 }
 
 .img-slider {
+    width: 70%;
     display: flex;
     height: 40px;
     justify-content: space-between;
     margin: auto;
-    width: 60%;
     margin-top: 15px;
 }
 
