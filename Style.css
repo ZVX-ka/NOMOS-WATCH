@@ -3,29 +3,27 @@
     padding: 0px;
 }
 
-html {
-    margin: 0px;
-    padding: 0px;
-    height: 800px;
-    width: 100vw;
-}
-
+html,
 body {
     margin: 0px;
     padding: 0px;
+    height: 100%;
     width: 100%;
+    overflow-x: hidden;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-    height: 100%-20px;
+    height: 100%;
     padding: 20px;
 }
 
 
 .card {
     background-color: white;
-    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,14 +35,13 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
-   
 }
 
 
 #shopping i {
     font-size: 20px;
-    
 }
+
 #shopping sup {
     margin-left: 4px;
 }
