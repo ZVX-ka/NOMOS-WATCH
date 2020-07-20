@@ -268,7 +268,6 @@ h3:nth-child(2) {
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
     .buttons {
         flex-direction: row;
@@ -277,5 +276,11 @@ h3:nth-child(2) {
 
     .card {
         width: 75%;
+        height: 100%;
     }
+
+        #shopping i {
+        font-size: 30px;
+    }
+
 }
